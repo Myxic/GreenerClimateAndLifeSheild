@@ -8,7 +8,10 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family:'Times New Roman', Times, serif; */
+
+  
     background: #f6f9ff;
     color: #444444;
 
@@ -93,6 +96,8 @@ header div {
 ------------------------------------------*/
 main {
     margin-top: 71px;
+
+   
 
 }
 
@@ -216,6 +221,8 @@ main {
     width: 100%;
     min-height: 800px;
     padding: 60px 160px;
+    
+
 }
 
 .GetToKnowUs h1 {
@@ -227,7 +234,7 @@ main {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 40px;
-    margin-bottom: 40px;
+    
 }
 
 .GetToKnowUs>div>div {
@@ -299,3 +306,150 @@ main {
 .GetToKnowUs > div:nth-child(3) > span a:hover{
     background-color: #f04b09;
 }
+
+/*----------------------------------
+# GetToKnowUs
+------------------------------------*/
+.TakeAction{
+    padding: 0px 160px 40px 160px; 
+    width: 100%;
+    
+  
+}
+
+.TakeAction > div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  
+}
+.TakeAction>div>div{
+    width: 32%;
+    box-shadow: 0 1px 8px rgba(0,0,0,.16);
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 500px;
+    position: relative;
+    
+}
+
+.TakeAction>div>div:hover{
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.485);
+}
+.TakeAction>div>div>figure>img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.TakeAction>div>div>div{
+    padding: 10px 25px 60px 25px;
+  
+   
+    
+}
+
+.TakeAction>div>div>div>a:nth-child(1){
+    
+    text-decoration: none;
+    color: #444444ac;
+}
+.TakeAction>div>div>div>a:hover{
+    color: #444444;
+}
+.TakeAction>div>div>div>a:nth-child(2){
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+.TakeAction>div>div>div>a:nth-child(2):hover{
+    border-bottom: 3px solid black;
+    
+}
+.TakeAction>div>div>div>span{
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    display: block;
+    
+    
+}
+
+.TakeAction>div>div>div>span>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+ 
+    background-color: #ffc107ad;
+  
+}
+
+.TakeAction>div>div>div>span>a:hover{
+    background-color: var(--bs-yellow);
+}
+
+/*----------------------------------
+# RecentStory
+------------------------------------*/
+.RecentStory{
+    padding: 0px 160px 40px 160px; 
+    width: 100%;
+
+    height: 400px;
+}
+.RecentStory>h1{
+    font-weight: 800;
+}
+.RecentStory>div>.story{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+.RecentStory>div>.story>figure{
+    width: 900px;
+
+}
+.RecentStory>div>.story>figure>img{
+    width: 100%;
+    height: 250px;
+}
+
+.RecentStory>div>.story>div>p:nth-child(1)>a{
+   text-decoration: none;
+   color: #198700;
+}
+
+
+.RecentStory>div>.story>div>p:nth-child(1)>a:hover{
+    text-decoration:underline;
+    color: #198700;
+ }
+
+ .RecentStory>div>.story>div>p:nth-child(4)>a{
+    text-decoration: none;
+    color: #444444ce;
+ }
+
+ .RecentStory>div>.story>div>p:nth-child(4)>a:hover{
+    text-decoration: underline;
+ }
+
+ .RecentStory>span>b{
+    padding: 15px;
+    color:  #105301;
+    outline: 1px solid  #105301;
+    border-radius: 4px;
+    font-weight: 600;
+    margin:50px;
+ }
+
+ .RecentStory>span>b:hover{
+    background-color: #105301;
+    color: white;
+ }
+
+ /*----------------------------------
+# Footer
+------------------------------------*/
+
