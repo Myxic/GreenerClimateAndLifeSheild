@@ -12,7 +12,7 @@ body {
     /* font-family:'Times New Roman', Times, serif; */
 
   
-    background: #f6f9ff;
+    /* background: #f6f9ff; */
     color: #444444;
 
 }
@@ -76,10 +76,11 @@ header div {
 
 
 }
-
+.navs ul .activeNav,
 .navs ul li:hover {
-    border-bottom: 4px solid var(--bs-green);
+    border-bottom: 4px solid var(--bs-green) ;
 }
+
 
 .navs ul li a {
     height: 100%;
@@ -308,11 +309,12 @@ main {
 }
 
 /*----------------------------------
-# GetToKnowUs
+# TakeAction
 ------------------------------------*/
 .TakeAction{
     padding: 0px 160px 40px 160px; 
     width: 100%;
+    position: relative;
     
   
 }
@@ -336,6 +338,10 @@ main {
 
 .TakeAction>div>div:hover{
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.485);
+}
+.TakeAction>div>div>figure{
+    width: 100%;
+    height: 55%;
 }
 .TakeAction>div>div>figure>img{
     width: 100%;
@@ -452,4 +458,241 @@ main {
  /*----------------------------------
 # Footer
 ------------------------------------*/
+
+
+
+
+
+
+
+/*----------------------------------
+# AboutUs . skewed-overlay 
+------------------------------------*/
+.skewed-overlay {
+    display: block;
+    height: 200vh;
+    -webkit-mask-image: linear-gradient(170deg,#000,#000,hsla(0,65%,68%,.2),transparent);
+    mask-image: linear-gradient(170deg,#000,#000,hsla(0,65%,68%,.2),transparent);
+    -webkit-mask-position: left top;
+    mask-position: left top;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  @media (min-width: 992px) {
+    .skewed-overlay::before {
+      background: transparent;
+      background: linear-gradient(245deg,transparent 15%,hsla(0,0%,100%,.2) 0,#fff 45%,hsla(0,0%,100%,.85) 0,hsla(0,0%,100%,.3) 80%,hsla(0,0%,100%,.9) 0,hsla(0,0%,100%,.9) 90%,hsla(0,0%,100%,.95) 0);
+    }
+  }
+  .skewed-overlay::before {
+    background: transparent;
+    background: linear-gradient(245deg,transparent 6%,hsla(0,0%,100%,.2) 0,#fff 35%,hsla(0,0%,100%,.85) 0,hsla(0,0%,100%,.3) 80%,hsla(0,0%,100%,.9) 0,hsla(0,0%,100%,.9) 95%,hsla(0,0%,100%,.95) 0);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+.page-header-background::after {
+    background: linear-gradient(1turn,#fff 0,transparent 100%);
+    bottom: -.5%;
+    content: "";
+    display: block;
+    height: 74%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+  .page-header-background img{
+    width: 100%;
+  }
+  .page-header-background {
+    bottom: var(auto);
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -10;
+    z-index: 0;
+}
+
+  /*----------------------------------
+# AboutUs . Info
+------------------------------------*/
+.info{
+    padding: 60px 160px;
+    
+    
+}
+.infobody{
+    position: relative;
+    top: 100px;
+    z-index: 2;
+}
+.introInfo{
+    width: 70%;
+}
+.introInfo>p:nth-child(1){
+    color :#105301;
+}
+.introInfo>p>a{
+    color:#105301;
+    text-decoration: none;
+
+}
+
+.workingOn{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+   
+
+}
+.workingOn>div{
+    position: relative;
+}
+
+.workingOn>div img{
+    width: 100%;
+    aspect-ratio: 2/1;
+  
+}
+.workingOn>div::before {
+    background: hsla(0,0%,9%,.65);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  .workingOn>div:hover::before  {
+    background: none;
+
+}
+/*----------------------------------
+# AboutUs . InfoCards
+------------------------------------*/
+.InfoCards {
+    width: 100%;
+    min-height: 550px;
+    padding: 60px 160px;
+    
+
+}
+
+.InfoCards>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.InfoCards>div>div {
+    width: 32%;
+    /* background-color: white ; */
+}
+
+.InfoCards>div>div figure {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.InfoCards>div>div figure img{
+    width: 30%;
+}
+
+.InfoCards>div>div>h3 {
+    font-weight: 600;
+
+
+}
+
+.InfoCards>div>div>h3>a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.InfoCards>div>div>h3>a:hover {
+    border-bottom: 3px solid black;
+}
+.InfoCards>div>div>h6>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid var(--bs-green);
+}
+.InfoCards>div>div>h6>a:hover{
+    background-color: rgb(105, 240, 159);
+    transition: 0.6s ease;
+}
+
+
+/*----------------------------------
+# AboutUs . TakeAction
+------------------------------------*/
+
+.AboutPage .prev,
+.AboutPage .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+}
+
+.AboutPage .next {
+    right: 60px;
+
+
+}
+
+.AboutPage .prev {
+    left: 60px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1.0);
+    color: rgba(245, 245, 253, 1.0);
+}
+
+
+/*----------------------------------
+# Donation
+------------------------------------*/
+
+.donationSection{
+    padding: 60px 160px ;
+}
+.donationSection>div{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.donationSection>div>.donationCard>div{
+    width: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    
+}
 

@@ -35,7 +35,7 @@
         <div class="navs">
             <ul>
                 <li><a href="/pages/AboutUs.html">About Us</a></li>
-                <li class="activeNav"><a href="/pages/TheWorkWeDo.html">The Work We Do</a></li>
+                <li><a href="/pages/TheWorkWeDo.html">The Work We Do</a></li>
                 <li><a href="/pages/JoinUs.html">Join Us</a></li>
                 <li><a href="/pages/Donate.html">Donate</a></li>
 
